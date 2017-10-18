@@ -2,7 +2,6 @@ import React from 'react'
 import { Router, NavLink, Link } from 'react-static'
 import { getSiteProps } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
-import { Head } from 'react-static'
 //
 import Routes from 'react-static-routes'
 
@@ -40,12 +39,6 @@ const AppStyles = styled.div`
 `
 /*
 */
-
-export () => (
-	<Head>
-		<title>Thomas Desfossez - Lead Front-end Architect</title>
-	</Head>
-)
 
 export class Navbar extends React.Component {
 	constructor(props) {
