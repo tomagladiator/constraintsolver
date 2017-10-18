@@ -241,7 +241,7 @@ export default () => (
 			<Realisation 
 				srcImage="img/metro-epicerie.jpg"
 				altImage="Metro epicerie"
-				srcImageThb="img/logo-metro-epicerie-thb.png"
+				srcImageThb="img/logo-metro-thb.png"
 				altImageThb="Logo Metro epicerie"
 				year="2016"
 				client="Metro inc. est une entreprise québécoise de distribution alimentaire et pharmaceutique au Canada. En 2013, son chiffre d'affaires était de 11,4&nbsp;milliards de dollars cad et elle employait 65 000 employés."
