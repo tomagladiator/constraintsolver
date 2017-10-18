@@ -109,7 +109,7 @@ export default () => (
 						</p>
 					</div>
 				]}
-				hashtag="#Responsive #Sitecore"
+				hashtag="#Responsive #Sitecore #Agile"
 				agency="Pour l'Agence Nexio en tant que Lead front-end"
 				>
 			</Realisation> 
@@ -155,7 +155,7 @@ export default () => (
 						</p>
 					</div>
 				]}
-				hashtag="#Responsive #Parallax #PrixBoomerang"
+				hashtag="#Responsive #Parallax #PrixBoomerang #Agile"
 				agency="Pour l'Agence Tink en tant que consultant front-end"
 				>
 			</Realisation> 
@@ -209,7 +209,7 @@ export default () => (
 						</p>
 					</div>
 				]}
-				hashtag="#Responsive #Orchard #Accessible #PrixBoomerang"
+				hashtag="#Responsive #Orchard #Accessible #PrixBoomerang #Agile"
 				agency="Pour l'Agence Tink en tant que développeur front-end"
 				>
 			</Realisation>  
@@ -237,6 +237,30 @@ export default () => (
 
 	
 		<div className="tile is-parent is-vertical">
+	
+			<Realisation 
+				srcImage="img/metro-epicerie.jpg"
+				altImage="Metro epicerie"
+				srcImageThb="img/logo-metro-epicerie-thb.png"
+				altImageThb="Logo Metro epicerie"
+				year="2016"
+				client="Metro inc. est une entreprise québécoise de distribution alimentaire et pharmaceutique au Canada. En 2013, son chiffre d'affaires était de 11,4&nbsp;milliards de dollars cad et elle employait 65 000 employés."
+				content={[	
+					<div>
+						<p>
+							Ma mission consistait à l'intégration des maquettes dans un environnement JAVA.
+						</p>
+
+						<p>
+							Évaluer les récits et déléguer les tâches
+						</p>
+					</div>
+				]}
+				hashtag="#Responsive #Sitecore #CMS #java #Agile"
+				agency="Pour l'Agence Nexio en tant que Lead technique front-end"
+				>
+			</Realisation> 
+	
 			<Realisation 
 				srcImage="img/monetico.jpg"
 				altImage="Monetico"
@@ -247,7 +271,7 @@ export default () => (
 				content={[	
 					<div>
 						<p>
-							Réalisation de quatres projets pour ce client:
+							Réalisation de quatre projets pour ce client:
 						</p>
 
 						<p>
@@ -267,7 +291,7 @@ export default () => (
 						</p>
 					</div>
 				]}
-				hashtag="#Responsive #Parallax #PrixBoomerang #Accessibilité"
+				hashtag="#Responsive #Parallax #PrixBoomerang #Accessibilité #Agile"
 				agency="Pour l'Agence Tink en tant que Lead technique front-end"
 				>
 			</Realisation> 
@@ -290,7 +314,7 @@ export default () => (
 						</p>
 					</div>
 				]}
-				hashtag="#ios #android #PrixBoomerang"
+				hashtag="#ios #android #PrixBoomerang #Agile"
 				agency="Pour l'Agence Tink en tant que développeur front-end"
 				>
 			</Realisation> 
