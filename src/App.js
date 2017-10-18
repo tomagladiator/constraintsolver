@@ -59,7 +59,7 @@ export class Navbar extends React.Component {
 				<div className="container">
 					<div className="navbar-brand">
 						<NavLink exact to="/" className="navbar-item"  activeClassName="is-active">
-							Constraint Solver
+							Thomas Desfossez
 						</NavLink>
 
 						<span className={this.state.active ? 'navbar-burger burger is-active': 'navbar-burger burger'} onClick={this.toggleClass.bind(this)}>
