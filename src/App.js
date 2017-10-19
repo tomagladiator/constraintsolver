@@ -74,12 +74,12 @@ export class Navbar extends React.Component {
 						<div className="navbar-end">
 							<NavLink to="/realisations" className="navbar-item" activeClassName="is-active">Mes réalisations</NavLink>
 
-							<a target="_blank" href="https://landbot.io/u/193651/index.html" className="navbar-item" >Une opportunité d'emploi?</a>
+							<a rel="noopener" target="_blank" href="https://landbot.io/u/193651/index.html" className="navbar-item" >Une opportunité d'emploi?</a>
 
 							<NavLink to="/blog" className="navbar-item" activeClassName="is-active">Blogue</NavLink>
 
 							<span className="navbar-item">
-								<a className="button is-info" href="https://ca.linkedin.com/in/tdesfossez/" target="_blank">
+								<a className="button is-info" href="https://ca.linkedin.com/in/tdesfossez/" rel="noopener" target="_blank">
 									<span className="icon">
 										<i className="fa fa-linkedin"></i>
 									</span>
@@ -87,7 +87,7 @@ export class Navbar extends React.Component {
 							</span>
 
 							<span className="navbar-item">
-								<a className="button is-info is-inverted" href="https://github.com/tomagladiator" target="_blank">
+								<a className="button is-info is-inverted" href="https://github.com/tomagladiator" rel="noopener" target="_blank">
 									<span className="icon">
 										<i className="fa fa-github"></i>
 									</span>

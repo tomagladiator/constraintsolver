@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
+import { Head } from 'react-static'
 //
 
 const AppStyles = styled.div`
@@ -12,8 +13,9 @@ const AppStyles = styled.div`
 .card {
 	.image img {
 		object-fit: cover;
-		max-height: 300px;
+		height: 300px;
 		object-position: top;
+		background-color: #4c4c4c;
 	}
 
 	.hashtag {
@@ -93,6 +95,10 @@ export class Realisation extends React.Component {
 
 export default () => (
 <AppStyles>
+	<Head>
+      <title>Mes réalisations | Thomas Desfossez, lead front-end</title>
+    </Head>
+
 	<div className="tile">
 		<div className="tile is-parent is-vertical">
 			<Realisation 
@@ -151,7 +157,7 @@ export default () => (
 						</p>
 
 						<p>
-							<a href='http://corpo.metro.ca/fr/accueil.html'>Metro Corpo</a>
+							<a href='http://corpo.metro.ca/fr/accueil.html' rel="noopener" target="_blank">Metro Corpo</a>
 						</p>
 					</div>
 				]}
@@ -178,7 +184,7 @@ export default () => (
 						</p>
 
 						<p>
-							<a href='https://www.constraintsolver.com/dyscatalog/'>Dyscatalog</a>
+							<a href='https://www.constraintsolver.com/dyscatalog/' rel="noopener" target="_blank">Dyscatalog</a>
 						</p>
 					</div>
 				]}
@@ -275,19 +281,19 @@ export default () => (
 						</p>
 
 						<p>
-							<a href="https://produits.desjardinsassurancesgenerales.com/home">Desjardins Assurances Generales</a> (2015)
+							<a href="https://produits.desjardinsassurancesgenerales.com/home" rel="noopener" target="_blank">Desjardins Assurances Generales</a> (2015)
 						</p>
 
 						<p>
-							<a href="https://www.disnat.com/">Desjardins Courtage en ligne</a> (2015)
+							<a href="https://www.disnat.com/" rel="noopener" target="_blank">Desjardins Courtage en ligne</a> (2015)
 						</p>
 
 						<p>
-							<a href="http://www.monetico.ca/">Desjardins Monetico</a> (prix Boomerang 2014)
+							<a href="http://www.monetico.ca/" rel="noopener" target="_blank">Desjardins Monetico</a> (prix Boomerang 2014)
 						</p>
 
 						<p>
-							<a href="https://www.disnat.com/experience/investisseur-en-ligne-nicolas.html#page-01">Desjardins Courtage en ligne</a>
+							<a href="https://www.disnat.com/experience/investisseur-en-ligne-nicolas.html#page-01" rel="noopener" target="_blank">Desjardins Courtage en ligne</a>
 						</p>
 					</div>
 				]}
