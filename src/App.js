@@ -24,6 +24,16 @@ injectGlobal`
 		padding: 0;
 	}
 
+	a {
+		color: #00bb9f;
+
+		&:hover,
+		&:focus {
+			color: white;
+			background: #00bb9f;
+		}
+	}
+
   	.hero .navbar {
 		background: 0 0;
 		background-color: #4c4c4c;
@@ -130,7 +140,13 @@ export default getSiteProps(({ github, linkedin }) =>
 
 			<div className="content has-text-centered is-small">
 				<p>
-					Ce site a été conçu avec React.js, react-static, Yarn, Bulma.io
+					Ce site a été conçu avec&nbsp;
+					<a target="_blank" rel="noopener" href="https://reactjs.org/" > React.js</a>, &nbsp;
+					<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" >react-static</a>, &nbsp;
+					<a target="_blank" rel="noopener" href="https://yarnpkg.com/fr/" >Yarn</a>, &nbsp;
+					<a target="_blank" rel="noopener" href="https://bulma.io/" >Bulma.io</a>,&nbsp;
+					<a target="_blank" rel="noopener" href="https://www.contentful.com" >Contentful</a> &amp;&nbsp;
+					<a target="_blank" rel="noopener" href="https://app.netlify.com/" >Netlify</a>
 				</p>
 			</div>
 		</div>

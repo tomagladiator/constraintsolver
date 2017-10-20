@@ -39,7 +39,7 @@ export default getSiteProps(({ title, linkedin }) =>  ([
             </p>
 
             <p>
-                Entre le Canada et l'Europe, j'ai développé une expérience professionelle dans les domaines du <strong>développement web</strong>, de la <strong>gestion de projet</strong> et de l'<strong>architecture frontend</strong>.
+                Entre le Canada et l'Europe, j'ai développé une expérience professionelle dans les domaines du <strong>développement web</strong>, de la <strong>gestion de projet</strong> et de l'<strong>architecture front-end</strong>.
             </p>
 
             <p>
@@ -47,7 +47,7 @@ export default getSiteProps(({ title, linkedin }) =>  ([
             </p>
 
             <p>
-                J'applique mes connaissances en <strong>accessibilité</strong>, en <strong>gestion</strong>, en <strong>développement</strong> et en <strong>design</strong> sur l'ensemble de mes projets.
+                J'applique mes connaissances en <strong>accessibilité</strong>, en <strong>gestion</strong>, en <strong>développement front-end</strong> et en <strong>design</strong> sur l'ensemble de mes projets.
             </p>
 
             <h2>Compétences
@@ -56,12 +56,12 @@ export default getSiteProps(({ title, linkedin }) =>  ([
 
             <p>
                 <a href="/temp/resume.pdf" target="_blank" rel="noopener">
-                    Tout est dans mon CV<sup className="icon"><i className="fa fa-external-link"></i></sup>
+                    Tout est dans mon CV
                 </a> (octobre 2016...)
             </p>
 
             <p>
-                Hey pssiii... mon <a href={linkedin} rel="noopener" target="_blank">Linkedin<sup className="icon"><i className="fa fa-external-link"></i></sup></a> est encore plus à jour!
+                Hey pssiii... mon <a href={linkedin} rel="noopener" target="_blank">Linkedin</a> est encore plus à jour!
             </p>
         </div>
     </AppStyles>
