@@ -10,8 +10,10 @@ export default {
   }),
   siteRoot: 'https://constraintsolver.com',
   getRoutes: async () => {
-    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    const { data: comments } = await axios.get('https://jsonplaceholder.typicode.com/comments');
+    const API_BASE_URL = 'https://cdn.contentful.com';
+    const API_SPACE_ID = 'w5s3ac9iqvx2';
+    const API_KEY = '5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552';
+    const { data: blogPost } = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=blogPost`);
     return [
       {
         path: '/',
@@ -29,14 +31,13 @@ export default {
         path: '/blog',
         component: 'src/containers/Blog',
         getProps: () => ({
-          posts,
+          blogPost,
         }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
+        children: blogPost.items.map(bloggy => ({
+          path: `/post/${bloggy.fields.slug}`,
           component: 'src/containers/Post',
           getProps: () => ({
-            post,
-            comments,
+            bloggy,
           }),
         })),
       },

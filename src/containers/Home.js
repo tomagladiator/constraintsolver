@@ -27,7 +27,7 @@ export default getSiteProps(({ title, linkedin }) =>  ([
     </Head>,
 
     <AppStyles>
-        <div className="content is-medium">
+        <div className="content">
             <img src="/img/thomas-desfossez.png" alt="Thomas Desfossez" className="b" />
 
             <h1 className="title">

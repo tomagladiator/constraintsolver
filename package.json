@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "marked": "^0.3.6",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
@@ -17,6 +18,7 @@
     "styled-components": "2.2.0"
   },
   "devDependencies": {
+    "contentful": "^5.0.1",
     "eslint-config-react-tools": "1.x.x",
     "serve": "^6.1.0"
   }

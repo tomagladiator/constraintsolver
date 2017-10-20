@@ -4,7 +4,8 @@ import { getRouteProps, Link } from 'react-static'
 import { Head } from 'react-static'
 //
 
-export default getRouteProps(({ posts }) => ([
+export default getRouteProps(({ blogPost }) => ([
+	
 	<Head>
 		<title>Blogue | Thomas Desfossez, lead front-end</title>
 	</Head>,
@@ -18,12 +19,12 @@ export default getRouteProps(({ posts }) => ([
 			Mes articles
 		</h2>
 
-		<ul>
-			{posts.map(post => (
-				<li key={post.id}>
-					<Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
+		<ol key="blogList"> 
+			{blogPost.items.map((bloggy, index) => (
+				<li key={index}>
+					<Link key={bloggy.sys.id} to={`/blog/post/${bloggy.fields.slug}/`}>{bloggy.fields.title}</Link>
 				</li>
 			))}
-		</ul>
+		</ol>
 	</div>
 ]))

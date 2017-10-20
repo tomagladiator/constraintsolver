@@ -1,27 +1,27 @@
 import React from 'react'
-import { getRouteProps, Link } from 'react-static'
+import { getRouteProps, Link, bloggy } from 'react-static'
+import { Head } from 'react-static'
+var marked = require('marked');
 //
 
-export default getRouteProps(({ post, comments }) => (
-  <div>
-    <Link to="/blog/">{'<'} Back</Link>
+export default getRouteProps(({ bloggy }) => (
+	<div>
+		<Head>
+			<title>{bloggy.fields.title} | Thomas Desfossez, lead front-end</title>
+		</Head>
 
-    <article>
-      <h1>{post.title}</h1>
+		<nav className="breadcrumb" aria-label="breadcrumbs">
+			<ul>
+				<li>
+					<Link to="/blog/"><span className="icon is-small"><i className="fa fa-angle-left"></i></span> <span>Sommaire</span></Link>
+				</li>
+			</ul>
+		</nav>
 
-      <p>{post.body}</p>
-       
-      <div>
-        All Comments:
-        <ul>
-          {comments.map(comment => (
-            post.id === comment.postId ?
-              <li key={comment.id}>
-                {comment.id} : {comment.body}
-              </li> : null
-          ))}
-        </ul>
-      </div>
-    </article>
-  </div>
+		<article className="content">
+			<h1>{bloggy.fields.title}</h1>
+
+			<div dangerouslySetInnerHTML={{__html: marked(bloggy.fields.body)}} />
+		</article>
+	</div>
 ))
