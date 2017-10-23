@@ -1,52 +1,9 @@
 import React from 'react'
 import { Router, NavLink, Link } from 'react-static'
 import { getSiteProps } from 'react-static'
-import styled, { injectGlobal } from 'styled-components'
 //
 import Routes from 'react-static-routes'
 
-injectGlobal`
-	.footer,
-	html {
-		background-color: #363636;
-	}
-
-	main {
-		background-color: #F4F4F6;
-		background: linear-gradient(215deg, #C5C5C5, #F4F4F6, #C5C5C5);
-	}
-
-	body {
-		font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-		font-weight: 300;
-		font-size: 16px;
-		margin: 0;
-		padding: 0;
-	}
-
-	a {
-		color: #00bb9f;
-
-		&:hover,
-		&:focus {
-			color: white;
-			background: #00bb9f;
-		}
-	}
-
-  	.hero .navbar {
-		background: 0 0;
-		background-color: #4c4c4c;
-	}
-
-	.footer {
-		color: #989898;
-	}
-`
-
-const AppStyles = styled.div`
-  
-`
 /*
 */
 
@@ -114,44 +71,44 @@ export class Navbar extends React.Component {
 };
 
 export default getSiteProps(({ github, linkedin }) =>
-  	<Router> 
-    <AppStyles>
-	<section className="hero is-primary" >
-		<div className="hero-head">
-			<Navbar></Navbar>
-		</div>
-	</section>      
+  	<Router>
+		<div className="global">
+			<section className="hero is-primary" >
+				<div className="hero-head">
+					<Navbar></Navbar>
+				</div>
+			</section>      
 
-	<main role="main">
-		<div className="hero-body">
-			<div className="container">
-				<Routes />
-			</div>
-		</div>
-	</main>
+			<main role="main">
+				<div className="hero-body">
+					<div className="container">
+						<Routes />
+					</div>
+				</div>
+			</main>
 
-	<footer className="footer">
-		<div className="container">
-			<div className="content has-text-centered">
-				<p>
-					constraintsolver&copy;2017
-				</p>
-			</div>
+			<footer className="footer">
+				<div className="container">
+					<div className="content has-text-centered">
+						<p>
+							constraintsolver&copy;2017
+						</p>
+					</div>
 
-			<div className="content has-text-centered is-small">
-				<p>
-					Ce site a été conçu avec&nbsp;
-					<a target="_blank" rel="noopener" href="https://reactjs.org/" > React.js</a>, &nbsp;
-					<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" >react-static</a>, &nbsp;
-					<a target="_blank" rel="noopener" href="https://yarnpkg.com/fr/" >Yarn</a>, &nbsp;
-					<a target="_blank" rel="noopener" href="https://bulma.io/" >Bulma.io</a>,&nbsp;
-					<a target="_blank" rel="noopener" href="https://www.contentful.com" >Contentful</a> &amp;&nbsp;
-					<a target="_blank" rel="noopener" href="https://app.netlify.com/" >Netlify</a>
-				</p>
-			</div>
+					<div className="content has-text-centered is-small">
+						<p>
+							Ce site a été conçu avec&nbsp;
+							<a target="_blank" rel="noopener" href="https://reactjs.org/" > React.js</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" >react-static</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://yarnpkg.com/fr/" >Yarn</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://bulma.io/" >Bulma.io</a>,&nbsp;
+							<a target="_blank" rel="noopener" href="https://www.contentful.com" >Contentful</a> &amp;&nbsp;
+							<a target="_blank" rel="noopener" href="https://app.netlify.com/" >Netlify</a>
+						</p>
+					</div>
+				</div>
+			</footer>
 		</div>
-	</footer>
-    </AppStyles>
   	</Router>
 )
 

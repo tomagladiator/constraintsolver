@@ -1,69 +1,46 @@
 import React from 'react'
-import { getSiteProps } from 'react-static'
+import { getRouteProps, Head } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
-import { Head } from 'react-static'
+var marked = require('marked');
 //
 
 
 const AppStyles = styled.div`
-.a {
-    text-align: center;
-    padding: 1rem;
 
-    .b {
-        cursor: pointer;
-        box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.65);
-        border-radius: 140px;
-        height: 140px;
-        filter: brightness(1.1) contrast(110%);
-        margin-bottom: 20px;
-    }
-}
 `
 
-export default getSiteProps(({ title, linkedin }) =>  ([
+export default getRouteProps(({ personContent }) =>  ([
     <Head>
-        <title>Thomas Desfossez, lead front-end</title>
-    </Head>,
+        <title>{personContent.items[0].fields.name}, {personContent.items[0].fields.title}</title>
+    </Head>, 
 
     <AppStyles>
         <div className="content">
-            <img src="/img/thomas-desfossez.png" alt="Thomas Desfossez" className="b" />
+            <div className="columns   is-flex-align-center">
+                <div className="column   is-narrow">
+                    <figure className="image is-128x128 is-object-fit-cover is-round">
+                        <img className="image is-128x128" src={personContent.includes.Asset[0].fields.file.url} alt={personContent.items[0].fields.name}  />
+                    </figure>
+                </div>
+ 
+                <div className="column">
+                    <h1 className="title">
+                        {personContent.items[0].fields.name}
+                    </h1>
 
-            <h1 className="title">
-                Thomas Desfossez
-            </h1>
+                    <p className="subtitle">
+                        <i>{personContent.items[0].fields.title}</i>
+                    </p>
 
-            <p className="subtitle">
-                <i>{title}</i>
-            </p>
+                    <p>
+                        <strong>Poste actuel</strong> : {personContent.items[0].fields.company} <br />
+                        <strong>Localité</strong> : {personContent.items[0].fields.villePays}
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                Entre le Canada et l'Europe, j'ai développé une expérience professionelle dans les domaines du <strong>développement web</strong>, de la <strong>gestion de projet</strong> et de l'<strong>architecture front-end</strong>.
-            </p>
-
-            <p>
-                Je reste à l'affût des nouvelles pratiques et technologies dans le domaine du web.
-            </p>
-
-            <p>
-                J'applique mes connaissances en <strong>accessibilité</strong>, en <strong>gestion</strong>, en <strong>développement front-end</strong> et en <strong>design</strong> sur l'ensemble de mes projets.
-            </p>
-
-            <h2>Compétences
-                Profil
-            </h2>
-
-            <p>
-                <a href="/temp/resume.pdf" target="_blank" rel="noopener">
-                    Tout est dans mon CV
-                </a> (octobre 2016...)
-            </p>
-
-            <p>
-                Hey pssiii... mon <a href={linkedin} rel="noopener" target="_blank">Linkedin</a> est encore plus à jour!
-            </p>
+            <div dangerouslySetInnerHTML={{__html: marked(personContent.items[0].fields.shortBio)}} />
         </div>
     </AppStyles>
-]))
+])) 
  
