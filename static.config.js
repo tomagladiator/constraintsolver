@@ -23,7 +23,7 @@ export default {
     linkedin: 'https://ca.linkedin.com/in/tdesfossez/',
     github: 'https://github.com/tomagladiator',
   }),
-  siteRoot: 'https://thomas-desfossez.com',
+  siteRoot: 'https://www.thomas-desfossez.com',
   getRoutes: async () => {
     const API_BASE_URL = 'https://cdn.contentful.com';
     const API_SPACE_ID = 'w5s3ac9iqvx2';
