@@ -2,6 +2,8 @@
 import React from 'react'
 import { getRouteProps, Link } from 'react-static'
 import { Head } from 'react-static'
+var dateFormat = require('dateformat');
+var now = new Date();
 //
 
 export default getRouteProps(({ blogPost }) => ([
@@ -12,19 +14,41 @@ export default getRouteProps(({ blogPost }) => ([
 
 	<div className="content">
 		<h1>
-			It's blog time
+			Mes articles
 		</h1>
 
-		<h2>
-			Mes articles
-		</h2>
+		<section itemScope itemType="http://schema.org/Blog">
+		{blogPost.items.reverse().map((bloggy, index) => (
+			<article itemScope itemType="http://schema.org/BlogPosting">
+				<div className="columns">
+					<div className="column">
+						<h2 itemProp="name" key={index}>
+							<Link key={bloggy.sys.id} to={`/blog/post/${bloggy.fields.slug}/`}>
+								{bloggy.fields.title}
+							</Link>
+						</h2>
+					</div>
 
-		<ol key="blogList"> 
-			{blogPost.items.map((bloggy, index) => (
-				<li key={index}>
-					<Link key={bloggy.sys.id} to={`/blog/post/${bloggy.fields.slug}/`}>{bloggy.fields.title}</Link>
-				</li>
-			))}
-		</ol>
+					<div className="column is-one-quarter">
+						<time dateTime={bloggy.fields.publishDate} itemProp="pubdate" content={bloggy.fields.publishDate}>
+							<small className="is-pulled-right">{dateFormat(bloggy.fields.publishDate, "dddd, mmmm dS, yyyy")}</small>
+						</time>
+					</div>
+				</div>
+
+				<p>
+					{bloggy.fields.description}
+				</p>
+
+				<p>
+					<Link key={bloggy.sys.id} to={`/blog/post/${bloggy.fields.slug}/`}>
+						Lire l'article...
+					</Link>
+				</p>
+
+				<hr />
+			</article>
+		))}
+		</section>
 	</div>
 ]))

@@ -19,7 +19,7 @@ export default getRouteProps(({ personContent }) =>  ([
             <div className="columns   is-flex-align-center">
                 <div className="column   is-narrow">
                     <figure className="image is-128x128 is-object-fit-cover is-round">
-                        <img className="image is-128x128" src={personContent.includes.Asset[0].fields.file.url} alt={personContent.items[0].fields.name}  />
+                        <img className="image is-128x128" src={personContent.includes.Asset[0].fields.file.url + '?h=128'} alt={personContent.items[0].fields.name}  />
                     </figure>
                 </div>
  

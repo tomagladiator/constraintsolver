@@ -39,11 +39,11 @@ export class Navbar extends React.Component {
 					
 					<div className={this.state.active ? 'navbar-menu is-active': 'navbar-menu'} >
 						<div className="navbar-end">
-							<NavLink to="/realisations" className="navbar-item" activeClassName="is-active">Mes réalisations</NavLink>
+							<NavLink to="/realisations" className="navbar-item" activeClassName="is-active" onClick={this.toggleClass.bind(this)}>Mes réalisations</NavLink>
 
 							<a rel="noopener" target="_blank" href="https://landbot.io/u/193651/index.html" className="navbar-item" >Une opportunité d'emploi?</a>
 
-							<NavLink to="/blog" className="navbar-item" activeClassName="is-active">Blogue</NavLink>
+							<NavLink to="/blog" className="navbar-item" activeClassName="is-active"  onClick={this.toggleClass.bind(this)}>Blogue</NavLink>
 
 							<span className="navbar-item">
 								<a className="button is-info" href="https://ca.linkedin.com/in/tdesfossez/" rel="noopener" target="_blank">

@@ -11,9 +11,11 @@
   "dependencies": {
     "axios": "^0.16.2",
     "dateformat": "^3.0.2",
+    "lodash": "^4.17.4",
     "marked": "^0.3.6",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-highlight": "^0.10.0",
     "react-intl": "^2.4.0",
     "react-router": "^4.2.0",
     "react-static": "1.x.x",

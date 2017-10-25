@@ -4,16 +4,10 @@ import { ServerStyleSheet } from 'styled-components'
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 /*
- [x] Simplifier le SCSS en ayant que le necessaire
- [x] accueil linké avec json user
- [ ] article list + detaillé avec image
+ [ ] Syntax highlighter
  [ ] page article + detaillé
- [ ] ajout séparé des realisations Desjardins
- [ ] Ajout Favicon
  [ ] Audit performance
- [ ] Ajouter microdata
  [ ] Ajout accessibilité sur le site ... !! Mettre l'enphase dessus
- [ ] Au clic le menu doit collapse
 */
 
 
@@ -30,8 +24,10 @@ export default {
     const API_KEY = '5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552';
     // https://cdn.contentful.com/spaces/w5s3ac9iqvx2/entries?access_token=5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552&content_type=person
     // https://cdn.contentful.com/spaces/w5s3ac9iqvx2/entries?access_token=5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552&content_type=blogPost
+    // https://cdn.contentful.com/spaces/w5s3ac9iqvx2/entries?access_token=5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552&content_type=realisation
     const { data: blogPost } = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=blogPost`);
     const { data: personContent }   = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=person`);
+    const { data: realisationData }   = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=realisation`);
     return [
       {
         path: '/',
@@ -47,6 +43,9 @@ export default {
       {
         path: '/realisations',
         component: 'src/containers/Realisations',
+        getProps: () => ({
+          realisationData,
+        }),
       },
       {
         path: '/blog',
