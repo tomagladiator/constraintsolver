@@ -38,6 +38,30 @@ const AppStyles = styled.div`
 }
 
 .card {
+
+	.card-image {
+		.image {
+			overflow: hidden;
+		}
+
+		img {
+			transition: all 0.6s ease-in;
+			opacity: 0.8;
+			filter: brightness(0.7) blur(7px) saturate(0);
+			transform: scale(1.2);
+		}
+	}
+
+	&:hover,
+	&:focus {
+		.card-image {
+			img {
+				opacity:1;
+				filter: brightness(1) blur(0px) saturate(1);
+				transform: scale(1);
+			}
+		}
+	}
 	
 	.image img {
 		object-fit: cover;
