@@ -81,7 +81,7 @@ export default {
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="theme-color" content="#00bb9f"/>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/fa.css" />
             <link rel="stylesheet" href="/css/bulma.css" />
             {styleTags}
           </Head>
