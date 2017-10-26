@@ -4,8 +4,17 @@ import { getSiteProps } from 'react-static'
 //
 import Routes from 'react-static-routes'
 
-/*
-*/
+// Check for browser support of service worker
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('js/service-workers.js')
+	.then(function(registration) {
+		// Successful registration
+		console.log('Hooray. Registration successful, scope is:', registration.scope);
+	}).catch(function(err) {
+		// Failed registration, service worker won’t be installed
+		console.log('Whoops. Service worker registration failed, error:', error);
+	});
+}
 
 export class Navbar extends React.Component {
 	constructor(props) {
