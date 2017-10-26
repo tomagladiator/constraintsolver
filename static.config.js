@@ -81,8 +81,9 @@ export default {
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="theme-color" content="#00bb9f"/>
-            <link rel="stylesheet" href="/css/fa.css" />
             <link rel="stylesheet" href="/css/bulma.css" />
+            <link rel="stylesheet" href="/css/fa.css" />
+            <link rel="manifest" href="/manifest.json" />
             {styleTags}
           </Head>
           <Body>{newChildren}</Body>

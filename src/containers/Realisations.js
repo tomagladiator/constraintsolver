@@ -45,7 +45,7 @@ const AppStyles = styled.div`
 		}
 
 		img {
-			transition: all 0.6s ease-in;
+			transition: all 0.4s cubic-bezier(0.3, 1.08, 1, 1);
 			opacity: 0.8;
 			filter: brightness(0.7) blur(7px) saturate(0);
 			transform: scale(1.2);
@@ -83,6 +83,7 @@ const AppStyles = styled.div`
 		max-height: 40px;
 		width: auto;
 		max-width: 120px;
+		height: auto;
 	}
 
 	.agency {
