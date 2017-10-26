@@ -39,7 +39,7 @@ export default getRouteProps(({ bloggy, blogPost }) => (
 
 			<footer>
 				<div className="columns"> 
-					<div className="column is-one-third">
+					<div className="column is-three-quarters-mobile is-two-thirds-tablet is-one-third-desktop">
 						<div className="box">
 							<div className="columns   is-flex-align-center"> 
 								<div className="column">

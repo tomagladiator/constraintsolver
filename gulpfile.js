@@ -47,7 +47,7 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions']
         }))
         .pipe(css_refactoring)
-        .pipe(sourcemaps.write('.'))
+        .pipe(sourcemaps.write('.')) 
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest('public/css/'))
 });
@@ -65,10 +65,10 @@ gulp.task('sass-dist', function () {
 
 gulp.task('sass-watch', [
     'sass',
-    'sass-dist'
+    'sass-dist',
 ], function() {
 });
 
-watch(['./src/**/*.sass'], function() {
+watch(['./src/**/*.sass', './src/**/*.scss'], function() {
     gulp.start('sass-watch');
 });
