@@ -4,6 +4,8 @@ var urlsToCache = [
     '/css/bulma.css'
 ];
 
+console.log('In service-workers');
+
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
