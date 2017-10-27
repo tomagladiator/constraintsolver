@@ -44,7 +44,7 @@ export default getRouteProps(({ bloggy, blogPost }) => (
 							<div className="columns   is-flex-align-center"> 
 								<div className="column">
 									<figure className="image is-48x48">
-										<img className="image is-48x48" src={blogPost.includes.Asset[1].fields.file.url} alt={blogPost.includes.Entry[0].fields.name} />
+										<img className="image is-48x48" src={blogPost.includes.Asset[1].fields.file.url + '?w=48'} alt={blogPost.includes.Entry[0].fields.name} />
 									</figure>
 								</div>
 		

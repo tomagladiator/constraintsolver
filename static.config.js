@@ -3,12 +3,6 @@ import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
-/*
- [ ] Syntax highlighter
- [ ] page article + detaillé
- [ ] Audit performance
- [ ] Ajout accessibilité sur le site ... !! Mettre l'enphase dessus
-*/
 
 
 export default {

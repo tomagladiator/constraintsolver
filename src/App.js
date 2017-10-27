@@ -97,7 +97,7 @@ export default getSiteProps(({ github, linkedin }) =>
 
 					<div className="content has-text-centered is-small">
 						<p>
-							Ce site a été conçu avec&nbsp;
+							Ce site a été conçu pour être une "Progressive Web App" avec&nbsp;
 							<a target="_blank" rel="noopener" href="https://reactjs.org/" > React.js</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" >react-static</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://yarnpkg.com/fr/" >Yarn</a>, &nbsp;
