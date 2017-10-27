@@ -83,7 +83,7 @@ export default {
             <meta name="theme-color" content="#00bb9f"/>
             <link rel="stylesheet" href="/css/bulma.css" />
             <link rel="manifest" href="/manifest.json" />
-            <script src="js/init-service-workers.js"></script>
+            <script async src="js/init-service-workers.js"></script>
             {styleTags}
           </Head>
           <Body>{newChildren}</Body>

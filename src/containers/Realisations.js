@@ -4,6 +4,7 @@ import React from 'react'
 import styled, { injectGlobal } from 'styled-components'
 import { getRouteProps, realisationData } from 'react-static'
 import { Head } from 'react-static'
+import LazyLoad from 'react-lazyload';
 var marked = require('marked');
 //
 
@@ -47,8 +48,8 @@ const AppStyles = styled.div`
 		img {
 			transition: all 0.4s cubic-bezier(0.3, 1.08, 1, 1);
 			opacity: 0.8;
-			filter: brightness(0.7) blur(7px) saturate(0);
-			transform: scale(1.2);
+			filter: brightness(0.7) blur(4px) saturate(0.2);
+			transform: scale(1.1);
 		}
 	}
 
@@ -111,7 +112,9 @@ export default getRouteProps(({ realisationData }) => (
 				<article className="card" key={"idCard"+index}>
 					<div className="card-image">
 						<figure className="image is-2by3">
-							<img src={real.fields.screenshot + '?w=642'} />
+							<LazyLoad height={300} once >
+								<img src={real.fields.screenshot + '?w=642'}  alt={real.fields.projectName} />
+							</LazyLoad>
 						</figure>
 					</div>
 
@@ -119,7 +122,9 @@ export default getRouteProps(({ realisationData }) => (
 						<div className="media">
 							<div className="media-left">
 								<figure className="image">
-									<img src={real.fields.logo + '?w=120'} />
+									<LazyLoad height={40} once >
+										<img src={real.fields.logo + '?w=120'} alt={real.fields.clientName} />
+									</LazyLoad>
 								</figure>
 							</div>
 
@@ -129,7 +134,7 @@ export default getRouteProps(({ realisationData }) => (
 								</p>
 							</div>
 						</div>
-				
+				 
 						<div className="content">
 
 							<div className="has-text-grey is-mb-1em is-size-7" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDuClient)}} />
