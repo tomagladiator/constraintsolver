@@ -9,7 +9,6 @@ var urlsToCache = [
   '/css/bulma.css'
 ];
 
-
 self.addEventListener('install', function (event) {
   // Perform install steps
   event.waitUntil(

@@ -4,8 +4,7 @@ import { getSiteProps } from 'react-static'
 import { Head } from 'react-static'
 //
 import Routes from 'react-static-routes'
-
-
+  
 export class Navbar extends React.Component {
 
 	constructor(props) {
@@ -98,9 +97,9 @@ export default getSiteProps(({ github, linkedin }) =>
 					<div className="content has-text-centered is-small">
 						<p>
 							Ce site a été conçu pour être une "Progressive Web App" avec&nbsp;
+							<a target="_blank" rel="noopener" href="https://github.com/" > Github</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://reactjs.org/" > React.js</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" >react-static</a>, &nbsp;
-							<a target="_blank" rel="noopener" href="https://yarnpkg.com/fr/" >Yarn</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://bulma.io/" >Bulma.io</a>,&nbsp;
 							<a target="_blank" rel="noopener" href="https://www.contentful.com" >Contentful</a> &amp;&nbsp;
 							<a target="_blank" rel="noopener" href="https://app.netlify.com/" >Netlify</a>

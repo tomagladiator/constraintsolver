@@ -136,7 +136,6 @@ export default getRouteProps(({ realisationData }) => (
 						</div>
 				 
 						<div className="content">
-
 							<div className="has-text-grey is-mb-1em is-size-7" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDuClient)}} />
 
 							<div className="is-mb-1em" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDesResponsabilits)}} />

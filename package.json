@@ -13,6 +13,7 @@
     "dateformat": "^3.0.2",
     "lodash": "^4.17.4",
     "marked": "^0.3.6",
+    "netlify-identity-widget": "^1.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-highlight": "^0.10.0",
