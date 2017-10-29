@@ -105,68 +105,70 @@ export default getRouteProps(({ realisationData }) => (
 		<Head>
 			<title>Mes réalisations | Thomas Desfossez, lead front-end</title>
 		</Head>
+	
+        <div className="container">
+			<div className="columns">
+				<div className="column">
+					{realisationData.items.map((real, index) => (
+					<article className="card" key={"idCard"+index}>
+						<div className="card-image">
+							<figure className="image is-2by3">
+								<LazyLoad height={300} once >
+									<img src={real.fields.screenshot + '?w=642'}  alt={real.fields.projectName} />
+								</LazyLoad>
+							</figure>
+						</div>
 
-		<div className="columns">
-			<div className="column">
-				{realisationData.items.map((real, index) => (
-				<article className="card" key={"idCard"+index}>
-					<div className="card-image">
-						<figure className="image is-2by3">
-							<LazyLoad height={300} once >
-								<img src={real.fields.screenshot + '?w=642'}  alt={real.fields.projectName} />
-							</LazyLoad>
-						</figure>
-					</div>
+						<div className="card-content">
+							<div className="media">
+								<div className="media-left">
+									<figure className="image">
+										<LazyLoad height={40} once >
+											<img src={real.fields.logo + '?w=120'} alt={real.fields.clientName} />
+										</LazyLoad>
+									</figure>
+								</div>
 
-					<div className="card-content">
-						<div className="media">
-							<div className="media-left">
-								<figure className="image">
-									<LazyLoad height={40} once >
-										<img src={real.fields.logo + '?w=120'} alt={real.fields.clientName} />
-									</LazyLoad>
-								</figure>
+								<div className="media-content">
+									<p className="title is-3 has-text-right">
+										{real.fields.year}	
+									</p>
+								</div>
 							</div>
+					
+							<div className="content">
+								<div className="has-text-grey is-mb-1em is-size-7" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDuClient)}} />
 
-							<div className="media-content">
-								<p className="title is-3 has-text-right">
-									{real.fields.year}	
+								<div className="is-mb-1em" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDesResponsabilits)}} />
+
+								<p className="is-size-7">
+									<span className="icon">
+										<i className="fa fa-home"></i>
+									</span>
+
+									{real.fields.agency}&nbsp;
+
+									<span className="icon">
+										<i className="fa fa-briefcase"></i>
+									</span>
+
+									{real.fields.jobTitle}	
 								</p>
 							</div>
 						</div>
-				 
-						<div className="content">
-							<div className="has-text-grey is-mb-1em is-size-7" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDuClient)}} />
 
-							<div className="is-mb-1em" dangerouslySetInnerHTML={{__html: marked(real.fields.descriptionDesResponsabilits)}} />
-
-							<p className="is-size-7">
-								<span className="icon">
-									<i className="fa fa-home"></i>
-								</span>
-
-								{real.fields.agency}&nbsp;
-
-								<span className="icon">
-									<i className="fa fa-briefcase"></i>
-								</span>
-
-								{real.fields.jobTitle}	
-							</p>
-						</div>
-					</div>
-
-					<footer className="card-footer">
-						<span className="card-footer-item hashtag is-size-7">
-							{real.fields.hashtag.map((hashTag, index) => (
-								<span  key={"idHashtag"+index}>
-									#{hashTag}&nbsp;
-								</span>
-							))}
-						</span>
-					</footer>
-				</article>
-				))}
+						<footer className="card-footer">
+							<span className="card-footer-item hashtag is-size-7">
+								{real.fields.hashtag.map((hashTag, index) => (
+									<span  key={"idHashtag"+index}>
+										#{hashTag}&nbsp;
+									</span>
+								))}
+							</span>
+						</footer>
+					</article>
+					))}
+				</div>
 			</div>
 		</div>
 	</AppStyles>

@@ -40,9 +40,9 @@ export class Navbar extends React.Component {
 						<div className="navbar-end">
 							<NavLink to="/realisations" className="navbar-item" activeClassName="is-active" onClick={this.toggleClass.bind(this)}>Mes réalisations</NavLink>
 
-							<a rel="noopener" target="_blank" href="https://landbot.io/u/193651/index.html" className="navbar-item" >Une opportunité d'emploi?</a>
-
 							<NavLink to="/blog" className="navbar-item" activeClassName="is-active"  onClick={this.toggleClass.bind(this)}>Blogue</NavLink>
+
+							<NavLink to="/contact" className="navbar-item" activeClassName="is-active"  onClick={this.toggleClass.bind(this)}>Une opportunité d'emploi?</NavLink>
 
 							<span className="navbar-item">
 								<a className="button is-info" href="https://ca.linkedin.com/in/tdesfossez/" rel="noopener" target="_blank">
@@ -80,9 +80,7 @@ export default getSiteProps(({ github, linkedin }) =>
 
 			<main role="main">
 				<div className="hero-body">
-					<div className="container">
-						<Routes />
-					</div>
+					<Routes />
 				</div>
 			</main>
 
