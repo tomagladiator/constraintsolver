@@ -104,6 +104,7 @@ export default getRouteProps(({ realisationData }) => (
 	<AppStyles>
 		<Head>
 			<title>Mes réalisations | Thomas Desfossez, lead front-end</title>
+        	<meta name="description" content="Liste de clients pour lesquels j'ai posé mon expertise" />
 		</Head>
 	
         <div className="container">

@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 
 
@@ -65,23 +64,24 @@ export default {
   Html: class CustomHtml extends Component {
     render () {
       const { Html, Head, Body, children } = this.props
-
       const sheet = new ServerStyleSheet()
       const newChildren = sheet.collectStyles(children)
       const styleTags = sheet.getStyleElement()
 
       return (
         <Html>
-          <Head>
+          <Head> 
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="theme-color" content="#00bb9f"/>
+            <meta name="theme-color" content="#00bb9f" />
+            <meta httpEquiv="X-UA-Compatible"  content="IE=edge,chrome=1" />
+            <meta charSet="utf-8" />
             <link rel="stylesheet" href="/css/bulma.css" />
             <link rel="manifest" href="/manifest.json" />
             <script async src="js/init-service-workers.js"></script>
             {styleTags}
           </Head>
           <Body>{newChildren}</Body>
-        </Html>
+        </Html> 
       )
     }
   }

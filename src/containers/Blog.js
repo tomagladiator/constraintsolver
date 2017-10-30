@@ -7,23 +7,24 @@ var now = new Date();
 //
 
 export default getRouteProps(({ blogPost }) => ([
-	<Head>
-		<title>Blogue | Thomas Desfossez, lead front-end</title>
-	</Head>,
-
 	<div className="container">
+		<Head>
+			<title>Blogue | Thomas Desfossez, lead front-end</title>
+			<meta name="description" content="Série de perles du web" />
+		</Head>
+
 		<div className="content">
 			<h1>
 				Mes articles
 			</h1>
 
-			<section itemScope itemType="http://schema.org/Blog">
+			<section key="section0" itemScope itemType="http://schema.org/Blog">
 			{blogPost.items.reverse().map((bloggy, index) => (
-				<article itemScope itemType="http://schema.org/BlogPosting">
+				<article key={"article" + index} itemScope itemType="http://schema.org/BlogPosting">
 					<div className="columns">
 						<div className="column">
-							<h2 itemProp="name" key={index}>
-								<Link key={bloggy.sys.id} to={`/blog/post/${bloggy.fields.slug}/`}>
+							<h2 itemProp="name">
+								<Link to={`/blog/post/${bloggy.fields.slug}/`}>
 									{bloggy.fields.title}
 								</Link>
 							</h2>

@@ -14,6 +14,7 @@ export default () => (
   <div>
     <Head>
       <title>Contact | Thomas Desfossez, lead front-end</title>
+      <meta name="description" content="BipBoop, rencontrez mon chatBot" />
     </Head>
 
     <AppStyles>

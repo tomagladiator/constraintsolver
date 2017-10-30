@@ -69,7 +69,7 @@ export class Navbar extends React.Component {
 	}
 };
 
-export default getSiteProps(({ github, linkedin }) =>
+export default getSiteProps(() =>
   	<Router>
 		<div className="global">
 			<section className="hero is-primary" >
@@ -80,7 +80,7 @@ export default getSiteProps(({ github, linkedin }) =>
 
 			<main role="main">
 				<div className="hero-body">
-					<Routes />
+					<Routes/>
 				</div>
 			</main>
 

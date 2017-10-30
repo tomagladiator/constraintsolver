@@ -14,6 +14,7 @@ export default getRouteProps(({ bloggy, blogPost }) => (
 	<AppStyles>
 		<Head>
 			<title>{bloggy.fields.title} | Thomas Desfossez, lead front-end</title>
+        	<meta name="description" content={bloggy.fields.description} />
 		</Head>
 		
 		<div className="container">
