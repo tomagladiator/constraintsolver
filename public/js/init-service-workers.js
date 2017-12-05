@@ -1,7 +1,7 @@
 (function () {
     // Check for browser support of service worker
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-workers.js')
+        navigator.serviceWorker.register('/service-worker.js')
         .then(function (registration) {
             // Successful registration
         }).catch(function (err) {
