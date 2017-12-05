@@ -5,7 +5,7 @@ var urlsToCache = [
   '/',
   '/blog/post/avoir-une-font-parfaitement-fluide-entre-deux-breakpoints-fixes/',
   '/blog/post/simplifier-au-minimum-le-reset-de-votre-css-avec-foundation/',
-  'https://www.thomas-desfossez.com/blog/post/avoir-une-font-parfaitement-fluide-entre-deux-breakpoints-fixes/',
+  '/blog/post/avoir-une-font-parfaitement-fluide-entre-deux-breakpoints-fixes/',
   '/realisations',
   '/blog',
   '/index.html',

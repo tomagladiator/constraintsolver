@@ -1,6 +1,6 @@
 {
     "name": "Thomas Desfossez",
-    "short_name": "TDesfossez",
+    "short_name": "Thomas D.",
     "display": "Standalone",
     "orientation": "portrait",
     "Scope": "/",
@@ -44,12 +44,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "splash_pages": null,
-    "related_applications": [{
-        "platform": "web"
-    }, {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
-    }]
+    ]
 }
