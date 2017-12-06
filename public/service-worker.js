@@ -1,5 +1,5 @@
 // NEED TO STAY IN THE ROOT to control directories : https://codelabs.developers.google.com/codelabs/offline/#5
-var randomnumber=Math.random()*5;importScripts('https://cdn.izooto.com/scripts/workers/268a624a409ca0caf8f6af9094e731f700481721.js?'+randomnumber);
+
 var CACHE_NAME = 'tdesfossez-cache-2';
 var urlsToCache = [
   '/',
@@ -30,3 +30,5 @@ self.addEventListener('fetch', function (event) {
     })
   );
 });
+
+importScripts('https://cdn.onesignal.com/sdks/OneSignalSDK.js');
