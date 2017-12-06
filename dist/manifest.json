@@ -8,7 +8,8 @@
     "background_color": "#09acb5",
     "theme_color": "#242424",
     "description": "Mon portfolio",
-    "gcm_sender_id": "437707042038",
+    "gcm_sender_id": "482941778795",
+    "gcm_sender_id_comment": "Do not change the GCM Sender ID",
     "icons": [{
             "src": "img/icons/icon-72x72.png",
             "sizes": "72x72",
