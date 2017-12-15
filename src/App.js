@@ -99,10 +99,10 @@ export default getSiteProps(() =>
 							<a target="_blank" rel="noopener" href="https://reactjs.org/" title="Framework js"> React.js</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" title="Generateur de site statique en React">react-static</a>, &nbsp;
 							<a target="_blank" rel="noopener" href="https://bulma.io/" title="Framework css">Bulma.io</a>,&nbsp;
-							<a target="_blank" rel="noopener" href="https://www.contentful.com" title="Gestion du contenu">Contentful</a> &amp;&nbsp;
-							<a target="_blank" rel="noopener" href="https://app.netlify.com/" title="Gestion des déploiement">Netlify</a>
-							<a target="_blank" rel="noopener" href="https://onesignal.com/" title="Gestion des notifications en Push">Onesignal</a>
-							<a target="_blank" rel="noopener" href="https://analytics.google.com/analytics/web/" title="Analyse des visites">Google Analytics</a>
+							<a target="_blank" rel="noopener" href="https://www.contentful.com" title="Gestion du contenu">Contentful</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://app.netlify.com/" title="Gestion des déploiement">Netlify</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://onesignal.com/" title="Gestion des notifications en Push">Onesignal</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://analytics.google.com/analytics/web/" title="Analyse des visites">Google Analytics</a> &amp;&nbsp;
 							<a target="_blank" rel="noopener" href="https://endtest.io/" title="Gestion des tests automatisés" >Endtest</a>
 						</p>
 					</div>
