@@ -95,12 +95,15 @@ export default getSiteProps(() =>
 					<div className="content has-text-centered is-small">
 						<p>
 							Ce site a été conçu pour être une "Progressive Web App" avec&nbsp;
-							<a target="_blank" rel="noopener" href="https://github.com/" > Github</a>, &nbsp;
-							<a target="_blank" rel="noopener" href="https://reactjs.org/" > React.js</a>, &nbsp;
-							<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" >react-static</a>, &nbsp;
-							<a target="_blank" rel="noopener" href="https://bulma.io/" >Bulma.io</a>,&nbsp;
-							<a target="_blank" rel="noopener" href="https://www.contentful.com" >Contentful</a> &amp;&nbsp;
-							<a target="_blank" rel="noopener" href="https://app.netlify.com/" >Netlify</a>
+							<a target="_blank" rel="noopener" href="https://github.com/" title="Repo du site"> Github</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://reactjs.org/" title="Framework js"> React.js</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://github.com/nozzle/react-static" title="Generateur de site statique en React">react-static</a>, &nbsp;
+							<a target="_blank" rel="noopener" href="https://bulma.io/" title="Framework css">Bulma.io</a>,&nbsp;
+							<a target="_blank" rel="noopener" href="https://www.contentful.com" title="Gestion du contenu">Contentful</a> &amp;&nbsp;
+							<a target="_blank" rel="noopener" href="https://app.netlify.com/" title="Gestion des déploiement">Netlify</a>
+							<a target="_blank" rel="noopener" href="https://onesignal.com/" title="Gestion des notifications en Push">Onesignal</a>
+							<a target="_blank" rel="noopener" href="https://analytics.google.com/analytics/web/" title="Analyse des visites">Google Analytics</a>
+							<a target="_blank" rel="noopener" href="https://endtest.io/" title="Gestion des tests automatisés" >Endtest</a>
 						</p>
 					</div>
 				</div>
