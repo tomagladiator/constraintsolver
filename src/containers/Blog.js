@@ -19,7 +19,7 @@ export default getRouteProps(({ blogPost }) => ([
 			</h1>
 
 			<section key="section0" itemScope itemType="http://schema.org/Blog">
-			{blogPost.items.reverse().map((bloggy, index) => (
+			{blogPost.items.map((bloggy, index) => (
 				<article key={"article" + index} itemScope itemType="http://schema.org/BlogPosting">
 					<div className="columns">
 						<div className="column">
