@@ -18,7 +18,7 @@ export default {
     // https://cdn.contentful.com/spaces/w5s3ac9iqvx2/entries?access_token=5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552&content_type=person
     // https://cdn.contentful.com/spaces/w5s3ac9iqvx2/entries?access_token=5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552&content_type=blogPost
     // https://cdn.contentful.com/spaces/w5s3ac9iqvx2/entries?access_token=5a819d7a09aff26641f212718f2f7687cf71806be2d88dabc0f0b3e229926552&content_type=realisation
-    const { data: blogPost } = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=blogPost`);
+    const { data: blogPost } = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=blogPost&order=-fields.publishDate`);
     const { data: personContent }   = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=person`);
     const { data: realisationData }   = await axios.get(`${API_BASE_URL}/spaces/${API_SPACE_ID}/entries?access_token=${API_KEY}&content_type=realisation&order=-fields.year`);
     return [
