@@ -1,8 +1,9 @@
 // NEED TO STAY IN THE ROOT to control directories : https://codelabs.developers.google.com/codelabs/offline/#5
 
-var CACHE_NAME = 'tdesfossez-cache-2';
+var CACHE_NAME = 'tdesfossez-cache-3';
 var urlsToCache = [
   '/',
+  '/blog/post/comment-estimer-le-cout-de-laccessibilite-dans-un-projet/',
   '/blog/post/head-comprendre-les-balises-et-les-elements-dans-la-balise-head/',
   '/blog/post/simplifier-au-minimum-le-reset-de-votre-css-avec-foundation/',
   '/blog/post/avoir-une-font-parfaitement-fluide-entre-deux-breakpoints-fixes/',
