@@ -1,6 +1,6 @@
 // NEED TO STAY IN THE ROOT to control directories : https://codelabs.developers.google.com/codelabs/offline/#5
 
-var CACHE_NAME = 'tdesfossez-cache-3';
+var CACHE_NAME = 'tdesfossez-cache-7';
 var urlsToCache = [
   '/',
   '/blog/post/comment-estimer-le-cout-de-laccessibilite-dans-un-projet/',
@@ -10,6 +10,7 @@ var urlsToCache = [
   '/realisations',
   '/blog',
   '/react-static-routes.js',
+  '/reachme',
   '/app.js',
   '/css/bulma.css'
 ];

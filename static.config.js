@@ -34,6 +34,10 @@ export default {
         component: 'src/containers/Contact',
       },
       {
+        path: '/reachme',
+        component: 'src/containers/ReachMe',
+      },
+      {
         path: '/realisations',
         component: 'src/containers/Realisations',
         getProps: () => ({

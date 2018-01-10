@@ -44,12 +44,18 @@ export class Navbar extends React.Component {
 
 							<NavLink to="/contact" className="navbar-item" activeClassName="is-active"  onClick={this.toggleClass.bind(this)}>Une opportunité d'emploi?</NavLink>
 
+							<NavLink to="/reachme" className="navbar-item is-no-underlined" activeClassName="is-active"  onClick={this.toggleClass.bind(this)}> 
+								<span className="icon" title="Me contacter">
+									<i className="fa fa-paper-plane-o"></i>
+								</span>
+							</NavLink>
+
 							<span className="navbar-item">
 								<a className="button is-info" href="https://ca.linkedin.com/in/tdesfossez/" rel="noopener" target="_blank">
 									<span className="icon">
 										<i className="fa fa-linkedin"></i>
 									</span>
-								</a>
+								</a> 
 							</span>
 
 							<span className="navbar-item">
@@ -68,7 +74,7 @@ export class Navbar extends React.Component {
         );
 	}
 };
-
+ 
 export default getSiteProps(() =>
   	<Router>
 		<div className="global">

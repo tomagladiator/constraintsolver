@@ -2,6 +2,7 @@ var bulkSass     = require('gulp-sass-bulk-import');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps   = require('gulp-sourcemaps');
 var cssmin       = require('gulp-cssnano');
+var replace      = require('gulp-replace');
 var rename       = require("gulp-rename");
 var watch        = require('gulp-watch');
 var gutil        = require('gulp-util');
@@ -28,8 +29,19 @@ function handleError(err) {
     GULP
 ************************* */
 gulp.task('default', [
-    'sass-watch'
+    'sass-watch',
+    'Cache-Versioning'
 ], function() {
+});
+
+gulp.task('Cache-Versioning', function () {
+    gulp.src('public/OneSignalSDKWorker.js')
+        .pipe(replace(/tdesfossez-cache-(\d+)/g, function (match, number) {
+            var version = Number(number) + 1;
+            console.log('CACHE_NAME version: ' + version);
+            return 'tdesfossez-cache-' + version;
+        }))
+        .pipe(gulp.dest('public/'));
 });
 
 gulp.task('sass', function () {
