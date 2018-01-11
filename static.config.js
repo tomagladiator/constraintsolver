@@ -38,6 +38,10 @@ export default {
         component: 'src/containers/ReachMe',
       },
       {
+        path: '/merci',
+        component: 'src/containers/Thanks',
+      }, 
+      {
         path: '/realisations',
         component: 'src/containers/Realisations',
         getProps: () => ({

@@ -5,6 +5,7 @@
     import src_containers_Home from '../src/containers/Home'
 import src_containers_Contact from '../src/containers/Contact'
 import src_containers_ReachMe from '../src/containers/ReachMe'
+import src_containers_Thanks from '../src/containers/Thanks'
 import src_containers_Realisations from '../src/containers/Realisations'
 import src_containers_Post from '../src/containers/Post'
 import src_containers_Blog from '../src/containers/Blog'
@@ -17,6 +18,7 @@ import src_containers____ from '../src/containers/404'
               <Route exact path={'/'} component={src_containers_Home} />
 <Route exact path={'/contact'} component={src_containers_Contact} />
 <Route exact path={'/reachme'} component={src_containers_ReachMe} />
+<Route exact path={'/merci'} component={src_containers_Thanks} />
 <Route exact path={'/realisations'} component={src_containers_Realisations} />
 <Route exact path={'/blog/post/comment-estimer-le-cout-de-laccessibilite-dans-un-projet'} component={src_containers_Post} />
 <Route exact path={'/blog/post/head-comprendre-les-balises-et-les-elements-dans-la-balise-head'} component={src_containers_Post} />
