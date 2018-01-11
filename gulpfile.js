@@ -6,6 +6,7 @@ const replace = require('gulp-replace')
 const rename = require('gulp-rename')
 const watch = require('gulp-watch')
 const gutil = require('gulp-util')
+const exit = require('gulp-exit')
 const sass = require('gulp-sass')
 const gulp = require('gulp')
 
@@ -30,6 +31,7 @@ gulp.task('Cache-Versioning', () => (
       return `tdesfossez-cache-${version}`
     }))
     .pipe(gulp.dest('public/'))
+    .pipe(exit())
 ))
 
 gulp.task('sass', () => {

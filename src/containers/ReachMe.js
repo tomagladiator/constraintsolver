@@ -40,19 +40,19 @@ export default class Contact extends React.Component {
 
           <div className="field">
             <label htmlFor="name" className="label">Votre nom
-              <input type="text" name="name" id="name" className="input" onChange={this.handleChange} />
+              <input required type="text" name="name" id="name" className="input" onChange={this.handleChange} />
             </label>
           </div>
 
           <div className="field">
             <label htmlFor="email" className="label">Votre courriel
-              <input type="email" name="email" id="email" className="input" onChange={this.handleChange} />
+              <input required type="email" name="email" id="email" className="input" onChange={this.handleChange} />
             </label>
           </div>
 
           <div className="field">
             <label htmlFor="message" className="label">Message
-              <textarea name="message" id="message" className="textarea" onChange={this.handleChange} />
+              <textarea required name="message" id="message" className="textarea" onChange={this.handleChange} />
             </label>
           </div>
 
