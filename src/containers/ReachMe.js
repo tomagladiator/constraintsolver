@@ -23,7 +23,7 @@ export default class Contact extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
-    }).then(() => console.log("Success!")).catch(error => alert('Oh non, il y a une erreur: ' + error));
+    }).then(() => window.location.pathname  = "/merci").catch(error => alert('Oh non, il y a une erreur: ' + error));
 
     e.preventDefault();
   };
@@ -37,7 +37,7 @@ export default class Contact extends React.Component {
           Une opportunité d'emploi? Passez par <a href="/contact">mon chatBot</a> en premier pour vérifier que mon profil correspond bien à votre poste.
         </p>
         
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/merci/" onSubmit={this.handleSubmit}>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="merci" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
 
           <div className="field">
