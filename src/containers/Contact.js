@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { Head } from 'react-static'
-import styled, { injectGlobal } from 'styled-components'
+import styled from 'styled-components'
 
 const AppStyles = styled.div`
 iframe {
@@ -18,7 +17,7 @@ export default () => (
     </Head>
 
     <AppStyles>
-      <iframe id="landbot-frame" width="100%" frameBorder="0" src="https://landbot.io/u/193651/index.html"></iframe>
+      <iframe title="chatbot" id="landbot-frame" width="100%" frameBorder="0" src="https://landbot.io/u/193651/index.html" />
     </AppStyles>
   </div>
 )

@@ -1,34 +1,32 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
-//
 
-function encode(data) {
+function encode (data) {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
 }
 
 export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  constructor (props) {
+    super(props)
+    this.state = {}
   }
 
-  handleChange = (e) => {
-    this.setState({[e.target.name]: e.target.value});
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    }).then(() => window.location.pathname  = "/merci").catch(error => alert('Oh non, il y a une erreur: ' + error));
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    }).then(() => { window.location.pathname = '/merci' }).catch(error => alert(`Oh non, il y a une erreur: ${error}`))
 
-    e.preventDefault();
+    e.preventDefault()
   };
 
-  render() {
+  render () {
     return (
       <div className="content">
         <h1>Un mot doux ?</h1>
@@ -36,25 +34,25 @@ export default class Contact extends React.Component {
         <p>
           Une opportunité d'emploi? Passez par <a href="/contact">mon chatBot</a> en premier pour vérifier que mon profil correspond bien à votre poste.
         </p>
-        
+
         <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="merci" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
 
           <div className="field">
-            <label className="label">Votre nom
-              <input type="text" name="name" className="input" onChange={this.handleChange} />
-            </label>   
-          </div> 
-
-          <div className="field">
-            <label className="label">Votre courriel
-              <input type="email" name="email" className="input" onChange={this.handleChange} />
+            <label htmlFor="name" className="label">Votre nom
+              <input type="text" name="name" id="name" className="input" onChange={this.handleChange} />
             </label>
           </div>
 
           <div className="field">
-            <label className="label">Message
-              <textarea name="message" className="textarea" onChange={this.handleChange} ></textarea>
+            <label htmlFor="email" className="label">Votre courriel
+              <input type="email" name="email" id="email" className="input" onChange={this.handleChange} />
+            </label>
+          </div>
+
+          <div className="field">
+            <label htmlFor="message" className="label">Message
+              <textarea name="message" id="message" className="textarea" onChange={this.handleChange} />
             </label>
           </div>
 
@@ -62,12 +60,12 @@ export default class Contact extends React.Component {
             <button type="submit" className="button">
               Pfiuuuuu&nbsp;&nbsp;&nbsp;
               <span className="icon">
-                <i className="fa fa-paper-plane-o"></i>
+                <i className="fa fa-paper-plane-o" />
               </span>
             </button>
           </div>
-        </form> 
+        </form>
       </div>
-    );
+    )
   }
 }
