@@ -84,19 +84,19 @@ export default {
             <meta httpEquiv="X-UA-Compatible"  content="IE=edge,chrome=1" />
             <meta charSet="utf-8" />
             <title>Thomas Desfossez, Lead front-end architect</title>
-            <meta name="description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end">
-            <meta itemprop="name" content="Thomas Desfossez, Lead front-end architect">
-            <meta itemprop="description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end">
-            <meta itemprop="image" content="https://images.contentful.com/w5s3ac9iqvx2/69GJSDdpjUSeQgaWeSQcAa/7143da3ac245d7c5bc9a29c621ada047/profil.png?h=176&w=256&fit=fill">
-            <meta property="og:url" content="https://www.thomas-desfossez.com">
-            <meta property="og:type" content="website">
-            <meta property="og:title" content="Thomas Desfossez, Lead front-end architect">
-            <meta property="og:description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end">
-            <meta property="og:image" content="https://images.contentful.com/w5s3ac9iqvx2/69GJSDdpjUSeQgaWeSQcAa/7143da3ac245d7c5bc9a29c621ada047/profil.png?h=176&w=256&fit=fill">
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:title" content="Thomas Desfossez, Lead front-end architect">
-            <meta name="twitter:description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end">
-            <meta name="twitter:image" content="https://images.contentful.com/w5s3ac9iqvx2/69GJSDdpjUSeQgaWeSQcAa/7143da3ac245d7c5bc9a29c621ada047/profil.png?h=176&w=256&fit=fill">
+            <meta name="description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end"/>
+            <meta itemprop="name" content="Thomas Desfossez, Lead front-end architect"/>
+            <meta itemprop="description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end"/>
+            <meta itemprop="image" content="https://images.contentful.com/w5s3ac9iqvx2/69GJSDdpjUSeQgaWeSQcAa/7143da3ac245d7c5bc9a29c621ada047/profil.png?h=176&w=256&fit=fill"/>
+            <meta property="og:url" content="https://www.thomas-desfossez.com"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="Thomas Desfossez, Lead front-end architect"/>
+            <meta property="og:description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end"/>
+            <meta property="og:image" content="https://images.contentful.com/w5s3ac9iqvx2/69GJSDdpjUSeQgaWeSQcAa/7143da3ac245d7c5bc9a29c621ada047/profil.png?h=176&w=256&fit=fill"/>
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:title" content="Thomas Desfossez, Lead front-end architect"/>
+            <meta name="twitter:description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end"/>
+            <meta name="twitter:image" content="https://images.contentful.com/w5s3ac9iqvx2/69GJSDdpjUSeQgaWeSQcAa/7143da3ac245d7c5bc9a29c621ada047/profil.png?h=176&w=256&fit=fill"/>
             <link rel="stylesheet" href="/css/bulma.css" />
             <link rel="manifest" href="/manifest.json" />
             <script async src="js/init-service-workers.js"></script>
