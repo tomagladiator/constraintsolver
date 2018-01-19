@@ -1,9 +1,13 @@
 {
   "name": "react-static-starter",
+  "jest": {
+    "verbose": true
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "test": "jest",
     "start": "react-static start",
     "build": "react-static build",
     "serve": "serve dist -p 3000"
@@ -28,6 +32,7 @@
     "autoprefixer": "^7.1.6",
     "contentful": "^5.0.1",
     "eslint-config-react-tools": "1.x.x",
+    "extend-tape": "^1.2.0",
     "extract-text-webpack-plugin": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -39,6 +44,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
+    "jest": "^22.1.2",
     "less": "^3.0.0-alpha.3",
     "less-loader": "^4.0.5",
     "node-sass": "^4.5.3",
@@ -46,6 +52,7 @@
     "postcss-loader": "^2.0.8",
     "sass-loader": "^6.0.6",
     "serve": "^6.1.0",
+    "tape": "^4.8.0",
     "webpack": "^3.8.1"
   }
 }
