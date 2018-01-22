@@ -113,6 +113,21 @@ export default () => (
           <hr />
 
           <h2>
+            WebApp
+          </h2>
+
+          <p>
+            C'est une belle découverte pour moi, et je dois encore comprendre certains mystère sur la gestion
+            des caches, mais le fait de pouvoir faire des Notifications en Push est vraiment hot!
+          </p>
+
+          <progress className="progress is-info" value="60" max="100">
+            60%
+          </progress>
+
+          <hr />
+
+          <h2>
             Photoshop / Illustrator
           </h2>
 
