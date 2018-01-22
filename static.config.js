@@ -1,4 +1,4 @@
-// NODE_TLS_REJECT_UNAUTHORIZED=0
+// set NODE_TLS_REJECT_UNAUTHORIZED=0
 
 import axios from 'axios'
 import React, { Component } from 'react'
@@ -32,6 +32,10 @@ export default {
       {
         path: '/contact',
         component: 'src/containers/Contact',
+      },
+      {
+        path: '/expertise',
+        component: 'src/containers/Expertise',
       },
       {
         path: '/reachme',
