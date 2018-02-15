@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+    "files.associations": {
+        "*.kit": "html",
+        "*.js": "javascript"
+    },
+    "emmet.useNewEmmet": true,
+    "beautify.tabSize": 2,
+    "beautify.options": {
+        "indent_size": 2,
+        "indent_char": " ",
+        "indent_with_tabs": false
+    },
+    "editor.accessibilitySupport": "off",
+    "editor.tabSize": 2,
+    "files.eol": "\n"
+	}
+}
