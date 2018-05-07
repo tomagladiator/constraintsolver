@@ -9,7 +9,6 @@ const gutil = require('gulp-util')
 const exit = require('gulp-exit')
 const sass = require('gulp-sass')
 const gulp = require('gulp')
-
 const minifyCss = true
 
 
