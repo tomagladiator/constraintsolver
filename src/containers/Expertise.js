@@ -36,7 +36,7 @@ export default () => (
           </h2>
 
           <p>
-            J'ai déja fais une formation sur le SCSS avec le MeetUp HTML5Mtl
+            J'ai animé une formation sur le SCSS avec le MeetUp HTML5Mtl
           </p>
 
           <progress className="progress is-info" value="90" max="100">
@@ -148,7 +148,7 @@ export default () => (
           </h2>
 
           <p>
-            Ma plus grande fierté: transformer un fichier CSS de 2Go a 200Ko
+            Ma plus grande fierté: transformer un fichier CSS de 2Go à 200Ko
           </p>
 
           <progress className="progress is-info" value="70" max="100">
@@ -162,7 +162,7 @@ export default () => (
           </h2>
 
           <p>
-            Bon, après le 5 <sup>e</sup> CMS, on finit par tous les connaitres
+            Bon, après le 5 <sup>e</sup> CMS, on finit par tous les connaître
           </p>
 
           <progress className="progress is-info" value="80" max="100">
@@ -177,7 +177,7 @@ export default () => (
 
           <p>
             J'ai suivi plusieurs formations / conférences d'agilité et
-            j'aime les débats interminable sur la définition d'un daily Scrum
+            j'aime les débats interminables sur la définition d'un daily Scrum
           </p>
 
           <progress className="progress is-info" value="80" max="100">
@@ -191,7 +191,7 @@ export default () => (
           </h2>
 
           <p>
-            Tant qu'on me donne le workflow pour le projet, je l'appliquerais à la lettre
+            Tant qu'on me donne le workflow pour le projet, je l'appliquerai à la lettre
             <br />
             Evidemment, j'utilise GIT aussi pour mes projets perso
           </p>
@@ -244,7 +244,7 @@ export default () => (
           <p>
             Mon anglais technique est très bon, la compréhension et la lecture surtout
             <br />
-            Mon écris et mon parlé manque un peu d'assurance toutefois
+            Mon écrit et mon parlé manque un peu d'assurance toutefois
           </p>
 
           <progress className="progress is-info" value="70" max="100">
