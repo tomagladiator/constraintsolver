@@ -8,7 +8,7 @@ export default getRouteProps(({ personContent }) => ([
 
     <Head>
       <title>{personContent.items[0].fields.name}, {personContent.items[0].fields.title}</title>
-      <meta name="description" content="Développeur web sur Montréal spécialisé en accessibilité et architecture front-end" />
+      <meta name="description" content="Développeur web sur Lyon spécialisé en accessibilité et architecture front-end" />
     </Head>
 
     <div className="content">
